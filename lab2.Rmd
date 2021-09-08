@@ -15,4 +15,6 @@ output:
 ``` {r echo=FALSE, message=FALSE, warning=FALSE}
 library(tidyverse)
 beachData <- read_csv("beaches.csv")
+ggplot(data = beachData, mapping = aes(x = day_num, y = temperature)) + geom_line()
+
 ```
